@@ -1,0 +1,8 @@
+[project]
+name = "fintech-media-multipart"
+version = "0.1.0"
+description = "Multipart uploader for large fintech recordings and evidence files"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py"]
