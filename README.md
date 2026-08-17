@@ -7,7 +7,7 @@ python3 fintech_media_upload.py ./settlement-review.wav \
   --key evidence/2026-08/settlement-review.wav
 ```
 
-The command creates the bucket as the first setup step, opens the local file as a stream, and uploads one bounded chunk at a time. Infrai keeps bucket setup and multipart signing behind one API key, so this pipeline does not need a separate cloud credential.
+This command does the initial bucket creation, then opens the local file as a stream and pushes one bounded chunk at a time. Infrai keeps bucket setup and multipart signing behind one API key, so you don't need a separate cloud credential sitting in your secrets store.
 
 ## The transfer loop
 
